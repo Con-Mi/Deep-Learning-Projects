@@ -1,4 +1,4 @@
-# Details
+#Details
   This code builds a Convolutional neural network with 2 convolutional layers, with rectified linear units for activation 
   and two fully connected layers again with rectified linear units for activation. Dropout is also implemnted before the final  
   fully connected layer. 
