@@ -25,7 +25,7 @@ def max_pool_2x2(x):
 	return tf.nn.max_pool(x, ksize = [1, 2, 2, 1], strides = [1, 2, 2, 1], padding = 'SAME')
 
 
-'''                       2nd Convolution and Pooling       '''
+'''                       1st Convolution and Pooling       '''
                   #########################################	
 # First Convolutional Layer
 W_conv1 = weight_variable([5, 5, 1, 32])  # Convolution with 32 2x2(x1) filters
@@ -39,8 +39,8 @@ h_conv1 = tf.nn.relu(conv2d(x_image, W_conv1) + b_conv1)
 h_pool1 = max_pool_2x2(h_conv1)
 
 
-'''							          2nd Convolution and Pooling       '''
-                  #########################################
+'''                       2nd Convolution and Pooling       '''
+                  #########################################	
 # Second Convolutional Layer
 W_conv2 = weight_variable([5, 5, 32, 64]) 
 b_conv2 = bias_variable([64])
